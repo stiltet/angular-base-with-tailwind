@@ -45,7 +45,7 @@ npx ng generate component path/to/the/component
 If for some reason, using a global `npx` version is preferred, is possilbe to install an specific version **globally** by running the following command:
 
 ```
-npm install -g @angular/cli@12.0.3
+npm install -g @angular/cli@^13.1.1
 ```
 
 - Double check the version in `package.json` file.
