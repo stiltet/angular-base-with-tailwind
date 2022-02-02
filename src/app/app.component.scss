@@ -1,0 +1,9 @@
+@import "styles/colors";
+
+h1 {
+  font-family: Roboto;
+}
+
+nav a {
+  @apply block md:inline-block text-sm px-4 py-2 leading-none text-white border-white hover:border-transparent hover:text-blue-700 hover:bg-white mt-4 md:mt-0;
+}

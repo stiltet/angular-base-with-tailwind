@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "nikolazaric.es6-typescript-import-sorter",
+    "wayou.vscode-todo-highlight"
+  ]
+}

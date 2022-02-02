@@ -1,0 +1,31 @@
+{
+  "files.associations": { "*.scss": "postcss" },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "gitlens.defaultDateFormat": "MMMM Do, YYYY hh:mm",
+  "gitlens.defaultTimeFormat": "hh:mm",
+  "todohighlight.keywords": [
+    "DEBUG:",
+    "REVIEW:",
+    {
+      "text": "NOTE:",
+      "color": "#0000ff",
+      "backgroundColor": "rgba(255,255,255,.5)",
+      "overviewRulerColor": "blue"
+    },
+    {
+      "text": "HACK:",
+      "color": "#000",
+      "border": "1px solid #000",
+      "isWholeLine": false,
+      "overviewRulerColor": "red"
+    },
+    {
+      "text": "TODO:",
+      "color": "red",
+      "border": "1px solid red",
+      "backgroundColor": "rgba(0,0,0,.2)",
+      "overviewRulerColor": "yellow"
+    }
+  ]
+}

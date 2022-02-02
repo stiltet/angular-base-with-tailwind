@@ -1,0 +1,74 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Watch mode with mock",
+      "command": "npm run start:mock",
+      "type": "shell",
+      "isBackground": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": {
+        "owner": "webpack",
+        "source": "webpack",
+        "fileLocation": "absolute",
+        "severity": "error",
+        "pattern": [
+          {
+            "regexp": "^ERROR in (.*)$"
+          },
+          {
+            "regexp": "^.*$"
+          },
+          {
+            "regexp": "^([^:]*): ([^:]*): ([^\\(]*) \\((\\d+):(\\d+)\\)$",
+            "file": 2,
+            "message": 3,
+            "line": 4,
+            "column": 5
+          }
+        ],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^.*: Hash: *$",
+          "endsPattern": "^.*(Compiled successfully)|(Failed to compile).*$"
+        }
+      }
+    },
+    {
+      "label": "Watch mode without mock",
+      "command": "npm run start:mock",
+      "type": "shell",
+      "isBackground": true,
+      "group": "build",
+      "problemMatcher": {
+        "owner": "webpack",
+        "source": "webpack",
+        "fileLocation": "absolute",
+        "severity": "error",
+        "pattern": [
+          {
+            "regexp": "^ERROR in (.*)$"
+          },
+          {
+            "regexp": "^.*$"
+          },
+          {
+            "regexp": "^([^:]*): ([^:]*): ([^\\(]*) \\((\\d+):(\\d+)\\)$",
+            "file": 2,
+            "message": 3,
+            "line": 4,
+            "column": 5
+          }
+        ],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^.*: Hash: *$",
+          "endsPattern": "^.*(Compiled successfully)|(Failed to compile).*$"
+        }
+      }
+    }
+  ]
+}
