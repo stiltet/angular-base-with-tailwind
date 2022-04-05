@@ -8,7 +8,7 @@ module.exports = {
           postcssOptions: {
             ident: "postcss",
             syntax: "postcss-scss",
-            plugins: ["tailwindcss", "autoprefixer"],
+            plugins: [require("tailwindcss/nesting"), "tailwindcss", "autoprefixer"],
           },
         },
       },
